@@ -32,14 +32,12 @@ a {
 /* /general */
 
 /* header */
-
-.header__block {
-  display: flex;
-  justify-content: flex-start;
-  row-gap: 1rem;
+header {
+  height: 6rem;
 }
 
 .header__block__avatar {
+  float: left;
   margin: 0 .75rem .75rem 0;
   background-image: url('../images/avatar.JPG');
   background-position: center;
@@ -51,24 +49,26 @@ a {
 }
 
 .header__block__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 1rem;
 }
 /* /header */
 
 /* main */
-.hero__block {
-  display: grid;
-  grid-template-columns: 1.75fr 1fr;
+.hero__block-left {
+  float: left;
+  max-width: 67%;
 }
 
-.hero-block-left {
+.hero__block-left-one {
   position: relative;
   margin: 1.5rem 1.75rem;
 }
 
-.hero-block-left  > svg {
+.hero__block-right-one {
+  margin: 1.5rem 0;
+}
+
+.hero__block-left-one  > svg {
   position: absolute;
   left: -1.75rem;
   top: .1rem;
@@ -76,8 +76,8 @@ a {
   color: black;
 }
 
-.hero-block-left-title,
-.hero-block-right-title {
+.hero__block-left-title,
+.hero__block-right-title {
   margin-bottom: .5rem;
 }
 /* hero-left */
@@ -99,6 +99,9 @@ a {
 /* /hero-left */
 
 /* hero-right */
+.hero__block-right {
+  float: right;
+}
 .hero__block-right__skills {
   display: flex;
   flex-direction: column;
@@ -134,6 +137,7 @@ a {
 
 /* footer */
 footer {
+  clear: both;
   background-color: rgb(125, 189, 244);
 }
 
