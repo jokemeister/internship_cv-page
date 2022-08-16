@@ -36,6 +36,13 @@ header {
   height: 6rem;
 }
 
+.header__block {
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  border-radius: 10px;
+}
+
 .header__block__avatar {
   float: left;
   margin: 0 .75rem .75rem 0;
@@ -50,6 +57,7 @@ header {
 
 .header__block__text {
   padding: 1rem;
+  float: right;
 }
 /* /header */
 
@@ -137,6 +145,9 @@ header {
 
 /* footer */
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   clear: both;
   background-color: rgb(125, 189, 244);
 }
