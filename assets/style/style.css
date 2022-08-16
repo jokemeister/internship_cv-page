@@ -2,9 +2,11 @@
 :root {
   /* color */
   --blue-700: rgba(125, 189, 244, 1);
+  --blue-400: rgba(125, 189, 244, .7);
 }
 body {
   margin: 0;
+  margin-top: 7rem;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.75rem;
@@ -37,19 +39,19 @@ a {
 
 /* header */
 header {
-  height: 6rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  /* border-radius: 10px; */
 }
 
 .header__block {
-  position: fixed;
-  background-color: white;
-  z-index: 100;
-  border-radius: 10px;
+  margin: .75rem 0;
 }
-
 .header__block__avatar {
   float: left;
-  margin: 0 .75rem .75rem 0;
   background-image: url('../images/avatar.JPG');
   background-position: center;
   background-repeat: no-repeat;
@@ -61,11 +63,14 @@ header {
 
 .header__block__text {
   padding: 1rem;
-  float: right;
+  float: left;
 }
 /* /header */
 
 /* main */
+.hero__block {
+  overflow: auto;
+}
 .hero__block-left {
   float: left;
   max-width: 67%;
