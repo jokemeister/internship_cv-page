@@ -1,0 +1,22 @@
+.header__block {
+  display: flex;
+  justify-content: flex-start;
+  row-gap: 1rem;
+}
+
+.header__block__avatar {
+  margin: 0 0.75rem 0.75rem 0;
+  background-image: url("../images/avatar.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5%;
+}
+
+.header__block__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
